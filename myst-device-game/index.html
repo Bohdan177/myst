@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myst-device-game</title>
+    <link rel="stylesheet" href="../css/mobile.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <div class="nav">
+            <div class="stopwatch">00:01</div>
+            <ul class="nav-buttons">
+                <li class="nav-link">
+                    <a href="#">Map</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">Me</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /End Navigation -->
+    </div>
+    <h1 class="entry-title">Treasure Chest</h1>
+    <img  class='entry-image' src="../img/chest.webp" alt="">
+    <div class="container">
+        <div class="game-inner">
+            <!-- Entry content -->
+            
+            <p>The chest is heavy, what could be inside?</p>
+            <!-- /End Entry content -->
+
+            <!-- Actions -->
+            <ul class="actions-wrapper">
+
+                <!-- ACTION ITEM -->
+                <li class="action-item" data-icon="key">
+                    <a href="#">
+                        <!-- image should be rendered via JS by data-icon attr -->
+                        <div class="action-image">
+                            <img class="action-icon" src="/icons/chest.svg" />
+                        </div>
+                        <!-- image should be rendered via JS by data-icon attr -->
+                        <p class="action-name">Close the chest</p>
+                    </a>
+                </li>
+                <!-- /END ACTION ITEM -->
+
+                <!-- ACTION ITEM -->
+                <li class="action-item" data-icon="key">
+                    <a href="#">
+                        <div class="action-image">
+                            Action
+                        </div>
+                        <p class="action-name">Action description here</p>
+                    </a>
+                </li>
+                <!-- /END ACTION ITEM -->
+                <!-- ACTION ITEM (Diabled state) -->
+                <li class="action-item disabled" data-icon="key">
+                    <a href="#">
+                        <div class="action-image">
+                            Action
+                        </div>
+                        <p class="action-name">Swing from the chandelier (need 2 team mates in room)</p>
+                    </a>
+                </li>
+                <!-- /END ACTION ITEM (Diabled state) -->
+                
+            </ul>
+            <!-- /End Actions -->
+
+            <!-- Items -->
+            <h3 class="small-title">Items</h3>
+            <ul class="items-wrapper">
+                <!-- Item -->
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="../icons/key.svg" alt="key">
+                    </div>
+                    <div class="item-text">
+                        <div class="item-name">Golden Key</div>
+                        <div class="item-description">A shiny key</div>
+                    </div>
+                    <a href="#" class="item-action">Take</a>
+                </li>
+                <!-- /End Item -->
+                <!-- Item with counter -->
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="../icons/gem.svg" alt="Gem">
+                        <span class="item-counter">x5</span>
+                    </div>
+                    <div class="item-text">
+                        <div class="item-name">Red Gem</div>
+                        <div class="item-description">Valuable or fake?</div>
+                    </div>
+                    <a href="#" class="item-action">Take</a>
+                </li>
+                <!-- /End Item with counter -->
+                <!-- Item with counter -->
+                <li class="item">
+                    <div class="item-icon">
+                        <img src="../icons/gem.svg" alt="Gem">
+                        <span class="item-counter">x5</span>
+                    </div>
+                    <div class="item-text">
+                        <div class="item-name">Red Gem</div>
+                        <div class="item-description">Valuable or fake?</div>
+                    </div>
+                    <a href="#" class="item-action">Take</a>
+                </li>
+                <!-- /End Item with counter -->
+                
+            </ul>
+            <!-- /End Items -->
+        
+            <!-- Players -->
+            <h3 class="small-title">Players in room</h3>
+            <ul class="players-list">
+                <li class="player-item">
+                    <div class="player-item__nickname">Samwise</div>
+                    <div class="player-item__score">1</div>
+                    <div class="player-item__game">Red Jaguars</div>
+                </li>
+                <li class="player-item">
+                    <div class="player-item__nickname">Samwise</div>
+                    <div class="player-item__score">22</div>
+                    <div class="player-item__game">Red Jaguars</div>
+                </li>
+            </ul>
+            <!-- /End Players -->
+        </div>
+
+
+        <!-- Drawer -->
+        <div class="drawer">
+            <div class="drawer-header">
+                <a href="#" class="drawer-opener">
+                    <svg width="34"  viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.98771 1.40272C6.58424 0.541708 7.85717 0.541708 8.4537 1.40272L13.3839 8.51881C14.0731 9.51361 13.3611 10.873 12.1509 10.873H2.29053C1.0803 10.873 0.368322 9.51361 1.05754 8.5188L5.98771 1.40272Z" fill="#919191"/>
+                    </svg>
+                </a>
+                <div class="drawer-bar"></div>
+                <a href="#" class="drawer-message__icon">
+                    💬
+                </a>
+            </div>
+            <ul class="drawer-body">
+                <li class="drawer-body__item">🌍️ The game has begun!</li>
+                <li class="drawer-body__item">🌍️ The game has begun!</li>
+                <li class="drawer-body__item">🌍️ The game has begun!</li>
+                <li class="drawer-body__item">🌍️ The game has begun!</li>
+                <li class="drawer-body__item">🌍️ The game has begun!</li>
+                <li class="drawer-body__item">🌍️ The game has begun!</li>
+                <li class="drawer-body__item">🌍️ The game has begun!</li>
+                <li class="drawer-body__item">🌍️ The game has begun!</li>
+                <li class="drawer-body__item">🌍️ The game has begun!</li>
+                <li class="drawer-body__item">🌍️ The game has begun!</li>
+                <li class="drawer-body__item">🌍️ The game has begun!</li>
+                <li class="drawer-body__item">🌍️ The game has begun!</li>
+                <li class="drawer-body__item">🌍️ The game has begun!</li>
+                <li class="drawer-body__item">🌍️ The game has begun!</li>
+                <li class="drawer-body__item">🌍️ The game has begun!</li>
+                <li class="drawer-body__item">🌍️ The game has begun!</li>
+            </ul>
+        </div>
+        <!-- /End Drawer -->
+
+    </div>
+</body>
+</html>

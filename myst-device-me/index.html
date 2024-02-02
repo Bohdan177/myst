@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myst-device-me</title>
+    <link rel="stylesheet" href="../css/mobile.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <div class="nav">
+            <div class="stopwatch">25:11</div>
+            <ul class="nav-buttons">
+                
+                <li class="nav-link">
+                    <a href="#">< Back</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /End Navigation -->
+    </div>
+    <div class="container">
+        <div class="game-inner">
+            
+            <!-- Profile Data -->
+            <section>
+                <div class="profile-wrapper">
+                    <div class="profile-img">
+                        <img src="../icons/profile.svg" alt="Profile icon">
+                    </div>
+                    <div class="profile-text">
+                        <div class="profile-text__name">Samwise - Red Jaguars</div>
+                        <div class="profile-text__description">Entrance Hall</div>
+                    </div>
+                </div>
+            </section>
+            <!-- /End Profile Data -->
+
+            <!-- Status -->
+            <section>
+                <h3 class="small-title">Status</h3>
+                <ul class="status-wrapper">
+                    <!-- Status Item -->
+                    <li class="status-item" data-icon="hunter">
+                        <div class="status-item__label">
+                            <div class="status-icon__wrapper">
+                                <img class="status-icon" src="../icons/hunter.svg" />
+                            </div>
+                            <span>Hunter</span>
+                        </div>
+                        <p class="status-name">Class (description)</p>
+                    </li>
+                    <!-- /End Status Item -->
+
+                    <!-- Status Item -->
+                    <li class="status-item" data-icon="arm">
+                        <div class="status-item__label">
+                            <div class="status-icon__wrapper">
+                                <img class="status-icon" src="../icons/arm.svg" />
+                            </div>
+                            <span>Strengthened</span>
+                        </div>
+                        <p class="status-name"></p>
+                    </li>
+                    <!-- /End Status Item -->
+
+                    <!-- Status Item -->
+                    <li class="status-item" data-icon="evil">
+                        <div class="status-item__label">
+                            <div class="status-icon__wrapper">
+                                <img class="status-icon" src="../icons/evil.svg" />
+                            </div>
+                            <span>Cursed</span>
+                        </div>
+                        <p class="status-name">You are under some kind of spell</p>
+                    </li>
+                    <!-- /End Status Item -->
+
+                    <!-- Status Item -->
+                    <li class="status-item" data-icon="evil">
+                        <div class="status-item__label">
+                            <div class="status-icon__wrapper">
+                                <img class="status-icon" src="../icons/evil.svg" />
+                            </div>
+                            <span>Cursed by Dracula</span>
+                        </div>
+                        <p class="status-name">You can only eat blood</p>
+                    </li>
+                    <!-- /End Status Item -->
+                </ul>
+            </section>
+            <!-- /End Status -->
+
+            <!-- Actions -->
+            <section>
+                <ul class="actions-wrapper">
+
+                    <!-- ACTION ITEM -->
+                    <li class="action-item" data-icon="key">
+                        <a href="#">
+                            <!-- image should be rendered via JS by data-icon attr -->
+                            <div class="action-image">
+                                <img class="action-icon" src="/icons/chest.svg" />
+                            </div>
+                            <!-- image should be rendered via JS by data-icon attr -->
+                            <p class="action-name">Close the chest</p>
+                        </a>
+                    </li>
+                    <!-- /END ACTION ITEM -->
+    
+                    <!-- ACTION ITEM -->
+                    <li class="action-item" data-icon="key">
+                        <a href="#">
+                            <div class="action-image">
+                                Action
+                            </div>
+                            <p class="action-name">Action description here</p>
+                        </a>
+                    </li>
+                    <!-- /END ACTION ITEM -->
+                    <!-- ACTION ITEM (Diabled state) -->
+                    <li class="action-item disabled" data-icon="key">
+                        <a href="#">
+                            <div class="action-image">
+                                Action
+                            </div>
+                            <p class="action-name">Swing from the chandelier (need 2 team mates in room)</p>
+                        </a>
+                    </li>
+                    <!-- /END ACTION ITEM (Diabled state) -->
+                    
+                </ul>
+            </section>
+            <!-- /End Actions -->
+
+            <!-- Items -->
+            <section>
+                <h3 class="small-title">Items</h3>
+                <ul class="items-wrapper">
+                    <!-- Item -->
+                    <li class="item">
+                        <div class="item-icon">
+                            <img src="../icons/key.svg" alt="key">
+                        </div>
+                        <div class="item-text">
+                            <div class="item-name">Golden Key</div>
+                            <div class="item-description">For opening the treasure chest</div>
+                        </div>
+                        <a href="#" class="item-action">Drop</a>
+                    </li>
+                    <!-- /End Item -->
+                    <!-- Item with counter -->
+                    <li class="item">
+                        <div class="item-icon">
+                            <img src="../icons/key.svg" alt="Gem">
+                            <span class="item-counter">99</span>
+                        </div>
+                        <div class="item-text">
+                            <div class="item-name">Rusty Knife</div>
+                        </div>
+                        <a href="#" class="item-action">Drop</a>
+                    </li>
+                    <!-- /End Item with counter -->
+                    <!-- Item with counter -->
+                    <li class="item">
+                        <div class="item-icon">
+                            <img src="../icons/gem.svg" alt="Gem">
+                            <span class="item-counter">x5</span>
+                        </div>
+                        <div class="item-text">
+                            <div class="item-name">Red Gem</div>
+                            <div class="item-description">Valuable or fake?</div>
+                        </div>
+                        <a href="#" class="item-action">Drop</a>
+                    </li>
+                    <!-- /End Item with counter -->
+                    
+                </ul>
+            </section>
+            <!-- /End Items -->
+            
+            <!-- Logout -->
+            <section>
+                <a href="#" class="logout-btn btn-center">Logout</a>
+            </section>
+            <!-- /End Logout -->
+         
+        </div>
+
+
+        <!-- Drawer -->
+        <div class="drawer">
+            <div class="drawer-header">
+                <a href="#" class="drawer-opener">
+                    <svg width="34"  viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.98771 1.40272C6.58424 0.541708 7.85717 0.541708 8.4537 1.40272L13.3839 8.51881C14.0731 9.51361 13.3611 10.873 12.1509 10.873H2.29053C1.0803 10.873 0.368322 9.51361 1.05754 8.5188L5.98771 1.40272Z" fill="#919191"/>
+                    </svg>
+                </a>
+                <div class="drawer-bar"></div>
+                <a href="#" class="drawer-message__icon">
+                    💬
+                </a>
+            </div>
+            <ul class="drawer-body">
+                <li class="drawer-body__item">🌍️ The game has begun!</li>
+                <li class="drawer-body__item">🌍️ The game has begun!</li>
+                <li class="drawer-body__item">🌍️ The game has begun!</li>
+                <li class="drawer-body__item">🌍️ The game has begun!</li>
+                <li class="drawer-body__item">🌍️ The game has begun!</li>
+                <li class="drawer-body__item">🌍️ The game has begun!</li>
+                <li class="drawer-body__item">🌍️ The game has begun!</li>
+                <li class="drawer-body__item">🌍️ The game has begun!</li>
+                <li class="drawer-body__item">🌍️ The game has begun!</li>
+                <li class="drawer-body__item">🌍️ The game has begun!</li>
+                <li class="drawer-body__item">🌍️ The game has begun!</li>
+                <li class="drawer-body__item">🌍️ The game has begun!</li>
+                <li class="drawer-body__item">🌍️ The game has begun!</li>
+                <li class="drawer-body__item">🌍️ The game has begun!</li>
+                <li class="drawer-body__item">🌍️ The game has begun!</li>
+                <li class="drawer-body__item">🌍️ The game has begun!</li>
+            </ul>
+        </div>
+        <!-- /End Drawer -->
+
+    </div>
+</body>
+</html>
