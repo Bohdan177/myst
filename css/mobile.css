@@ -22,6 +22,7 @@ ul{
 body{
     font-size: 14px;
     background: #f0f0f0;
+    padding-top: 134px;
 }
 section{
     padding: 15px 0;
@@ -63,7 +64,7 @@ section{
     color: var(--dark);
     background: #D9D9D9;
     font-style: italic;
-    padding: 12px 47px;
+    padding: 0.4em 1.57em;
     font-weight: 500;
     font-size: 2.2em;
     border-radius: 99px;
@@ -82,7 +83,6 @@ section{
 /* Entry content */
 
 .entry-title{
-    margin-top: 1.85em;
     padding: 0 61px 45px;
     text-align: center;
     font-size: 4.38em;
@@ -105,7 +105,7 @@ p{
 .actions-wrapper{
     display: flex;
     flex-direction: column;
-    margin: 60px 0;
+    /* margin: 60px 0; */
     gap: 2em;
 }
 .action-item.disabled{
@@ -122,17 +122,23 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 28px;
+    border-radius: 2em;
     min-width: 125px;
     text-align: center;
-    font-size: 2em;
     color: #222;
-    width: 182px;
-    height: 144px;
+    width: 12em;
+    height: 8.28em;
     flex-shrink: 0;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    -ms-border-radius: 2em;
+    -o-border-radius: 2em;
+}
+.action-image span{
+    font-size: 2em;
 }
 .action-icon{
-    width: 108px;
+    width: 4.7em;
     display: block;
     margin: 0 auto;
 }
@@ -156,38 +162,40 @@ p{
 .items-wrapper{
     display: flex;
     flex-direction: column;
+    gap: 1.9em;
 }
 .item{
     display: flex;
-    padding: 1.9em;
+    padding: 0 1.9em;
     align-items: center;
+    padding-top: 0;
 }
 .item-icon{
     position: relative;
 }
 .item-icon img{
-    width: 96px;
+    width: 4.8em;
 }
 .item-counter{
     border: 1px solid #000;
     background: #fff;
     border-radius: 90px;
-    width: 57px;
-    height: 57px;
-    font-size: 30px;
+    width: 1.6em;
+    height: 1.6em;
+    font-size: 1.6em;
     font-weight: 500;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: -27px;
-    right: -27px;
+    bottom: -20px;
+    right: -20px;
    
 }
 .item-text{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 5px;
     margin-left: 4.28em;
 }
 .item-name{
@@ -200,11 +208,12 @@ p{
 }
 .item-action{
     margin-left: auto;
-    font-size: 2.74em;
+    font-size: 2em;
     color: var(--dark);
     border: 7px solid #D9D9D9;
-    border-radius: 30px;
-    padding: 19px 50px;
+    border-radius: .6em;
+    padding: .5em .85em;
+
 }
 /* / End Items */
 
@@ -212,7 +221,7 @@ p{
 
 .player-item{
     display: flex;
-    font-size: 2.46em;
+    font-size: 2.12em;
     font-weight: 400;
     margin-bottom: .8em;
 }
@@ -227,11 +236,12 @@ p{
     margin-right: 2.14em;
     color: #fff;
     border-radius:60px;
-    width: 48px;
-    height: 48px;
+    width: 1.4em;
+    height: 1.4em;
     text-align: center;
-    line-height: 45px;
+    line-height: 19px;
     padding: 3px;
+    font-size: .5em;
 }
 .player-item:nth-child(1) .player-item__score {
     background: #F41C45;
@@ -288,18 +298,18 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1.78em 3.28em;
+    padding: 1.78em 2.28em;
     align-items: center;
     border-bottom: 1px solid #D5DBE1;
     background: #fafafa;
     border-radius: 24px 24px 0 0;
 }
 .drawer-opener svg{
-    width: 34px;
+    width: 2em;
 }
 .drawer-bar{
     width: 15.8em;
-    height: 1.1em;
+    height: .8em;
     border-radius: 60px;
     background: #919191;
 }
@@ -307,7 +317,7 @@ p{
     font-size: 2.4em;
 }
 .drawer-body{
-    padding: 1.07em 3.28em;
+    padding: 1.4em 3.28em;
     background: #fbfbfb;
     overflow-y: scroll;
     height: calc(100% - 136px);
@@ -565,6 +575,39 @@ p{
     }
     .nav{
         padding: 30px 1em;
+    }
+    .drawer-header{
+        padding: 0.2em 0.7em;
+    }
+}
+@media screen and (max-width:500px) {
+    .item-icon img, .action-icon{
+        width: 4em;
+    }
+    .item-text{
+        margin-left: 2em;
+    }
+    .item{
+        padding: 0;
+    }
+    .player-item__score{
+        margin: auto
+    }
+    .entry-title{
+        font-size: 3em;
+        padding: 0;
+    }
+    .drawer-bar{
+        width: 9.8em;
+    }
+}
+@media screen and (max-width:376px){
+    .action-image{
+        width: 8em;
+        height: 7em;
+    }
+    .actions-wrapper{
+        gap: 1em;
     }
 }
 
