@@ -280,7 +280,7 @@ p{
 
 /* Drawer */
 .drawer{
-    height: 91px;
+    height: 11em;
     position: fixed;
     z-index: 999;
     bottom: 0%;
@@ -415,15 +415,15 @@ p{
 .status-icon__wrapper{
     border-radius: 50px;
     padding: 8px;
-    width: 1.7em;
-    height: 1.7em;
+    width: 1.4em;
+    height: 1.4em;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
 }
 .status-icon{
-    width: 1.6em;
+    width: 80%;
 }
 .status-name{
     font-weight: 300;
@@ -627,7 +627,7 @@ p{
         font-size: 1.4em;
     }
     p, .action-name, .status-name, .item-name{
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
     .item-description{
         font-size: 1.2em;
@@ -645,7 +645,10 @@ p{
         font-size: 1.5em;
     }
     .status-item__label span {
-        font-size: 1.5em;
+        font-size: 1.4em;
+    }
+    .action-name, .status-name{
+        margin-left: 1em;
     }
 }
 @media screen and (max-width:376px){
