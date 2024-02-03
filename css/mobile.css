@@ -22,10 +22,10 @@ ul{
 body{
     font-size: 14px;
     background: #f0f0f0;
-    padding-top: 134px;
+    padding-top: 98px;
 }
 section{
-    padding: 15px 0;
+    padding: 30px 0;
 }
 .ml-auto{
     margin-left: auto;
@@ -42,13 +42,14 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 3.78em;
+    padding: 0 3.78em;
     background: #f0f0f0;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 33;
+    height: 98px;
 }
 .stopwatch{
     color: var(--grey);
@@ -77,6 +78,9 @@ section{
     /* padding-top: 134px; */
     padding-bottom: 12.9em ;
 }
+.game-inner p {
+    margin-bottom: 0.8em;
+}
 /* / End Game inner */
 
 
@@ -91,7 +95,7 @@ section{
 }
 .entry-image{
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 3.5em;
 }
 p{
     color: var(--dark);
@@ -122,17 +126,13 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 2em;
-    min-width: 125px;
+    border-radius: 1.2em;
+    /* min-width: 125px; */
     text-align: center;
     color: #222;
-    width: 12em;
-    height: 8.28em;
+    width: 10em;
+    height: 6.28em;
     flex-shrink: 0;
-    -webkit-border-radius: 2em;
-    -moz-border-radius: 2em;
-    -ms-border-radius: 2em;
-    -o-border-radius: 2em;
 }
 .action-image span{
     font-size: 2em;
@@ -142,11 +142,12 @@ p{
     display: block;
     margin: 0 auto;
 }
-.action-name, .status-name{
+.action-name,  .status-name{
     font-size: 2em;
     font-style: italic;
     font-weight: normal;
     margin-left: 2em;
+    margin-bottom: 0 !important;
     
 }
 
@@ -209,10 +210,12 @@ p{
 .item-action{
     margin-left: auto;
     font-size: 2em;
+    font-style: italic;
+    font-weight: 600;
     color: var(--dark);
-    border: 7px solid #D9D9D9;
+    border: .2em solid #D9D9D9;
     border-radius: .6em;
-    padding: .5em .85em;
+    padding: .5em 1.2em;
 
 }
 /* / End Items */
@@ -239,9 +242,15 @@ p{
     width: 1.4em;
     height: 1.4em;
     text-align: center;
-    line-height: 19px;
+    line-height: 25px;
     padding: 3px;
-    font-size: .5em;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-item__score span{
+    color: #fff;
 }
 .player-item:nth-child(1) .player-item__score {
     background: #F41C45;
@@ -259,7 +268,7 @@ p{
     display: flex;
 }
 .game-name .player-item__score{
-    display: block;
+    display: flex;
     background: #2662FC;
     margin-left: initial;
     font-size: 2em;
@@ -271,7 +280,7 @@ p{
 
 /* Drawer */
 .drawer{
-    height: 150px;
+    height: 91px;
     position: fixed;
     z-index: 999;
     bottom: 0%;
@@ -320,7 +329,7 @@ p{
     padding: 1.4em 3.28em;
     background: #fbfbfb;
     overflow-y: scroll;
-    height: calc(100% - 136px);
+    height: calc(100% + 1px);
 }
 .drawer-body__item{
     margin-bottom: 8px;
@@ -331,14 +340,14 @@ p{
 
 /* Buttons */
 .logout-btn{
-    font-size: 2.74em;
+    font-size: 1.5em;
     font-style: italic;
     color: var(--dark);
     background: #CA0024;
-    border-radius: 30px;
-    padding: 19px 50px;
+    padding: 0.7em 1.4em;
     color: #fff;
-    border: 7px solid transparent;
+    border: 0.2em solid transparent;
+    border-radius: 0.6em;
 }
 .btn-center{
     display: block;
@@ -351,29 +360,31 @@ p{
 /* Profile */
 .profile-wrapper{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    gap: 40px;
+    gap: 3%;
 }
 .profile-img{
     background: #F41C45;
     border-radius: 99px;
-    width: 80px;
-    height: 80px;
+    width: 4.7em;
+    height: 4.7em;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
 }
 .profile-img img{
     width: 50%;
 }
 .profile-text{
-    font-family: 'Roboto Condensed' sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     text-align: center;
+    margin-left: 10%;
 }
 .profile-text__name{
     font-weight: 500;
-    font-size: 2em;
+    font-size: 1.5em;
 
 }
 .profile-text__description{
@@ -404,14 +415,15 @@ p{
 .status-icon__wrapper{
     border-radius: 50px;
     padding: 8px;
-    width: 24px;
-    height: 24px;
+    width: 1.7em;
+    height: 1.7em;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 }
 .status-icon{
-    width: 24px;
+    width: 1.6em;
 }
 .status-name{
     font-weight: 300;
@@ -444,7 +456,7 @@ p{
 
 
 .map{
-    margin-top: 134px;
+    padding: 0;
 }
 .map-wrapper{
     position: relative;
@@ -500,8 +512,8 @@ p{
 .swither-tabs{
     margin-left: auto;
     cursor: pointer;
-    width: 265px;
-    height: 64px;
+    width: 17.6em;
+    height: 3.5em;
     background: #282B30;
     border: 2px solid #282B30;
     border-radius: 90px;
@@ -573,11 +585,9 @@ p{
     .drawer{
         width: calc(100% - 2em);
     }
-    .nav{
-        padding: 30px 1em;
-    }
+    
     .drawer-header{
-        padding: 0.2em 0.7em;
+        padding: 0.2em 1.7em;
     }
 }
 @media screen and (max-width:500px) {
@@ -590,15 +600,52 @@ p{
     .item{
         padding: 0;
     }
-    .player-item__score{
-        margin: auto
-    }
+   
     .entry-title{
         font-size: 3em;
-        padding: 0;
+        padding: 0 0 10px;
+    }
+    .drawer{
+        height: 65px;
     }
     .drawer-bar{
         width: 9.8em;
+    }
+    .drawer-message__icon{
+        font-size: 1.4em;
+    }
+    .drawer-opener svg{
+        width: 1.5em;
+    }
+    .drawer-body{
+        padding: 0.4em 1.28em;
+    }
+    .drawer-body__item{
+        font-size: 1.5em;
+    }
+    .nav-link a, .stopwatch{
+        font-size: 1.4em;
+    }
+    p, .action-name, .status-name, .item-name{
+        font-size: 1.5em;
+    }
+    .item-description{
+        font-size: 1.2em;
+    }
+    .small-title {
+        font-size: 2em;
+    }
+    .entry-image{
+        margin-bottom: 1.5em;
+    }
+    .item-action{
+        font-size: 1.5em;
+    }
+    .player-item{
+        font-size: 1.5em;
+    }
+    .status-item__label span {
+        font-size: 1.5em;
     }
 }
 @media screen and (max-width:376px){
