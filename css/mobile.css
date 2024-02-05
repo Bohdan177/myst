@@ -223,7 +223,8 @@ p{
 /* Players */
 
 .player-item{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     font-size: 2.12em;
     font-weight: 400;
     margin-bottom: .8em;
@@ -266,6 +267,11 @@ p{
 /* Players 2 */
 .game-name{
     display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+}
+.game-name .small-title{
+    margin-bottom: 0;
 }
 .game-name .player-item__score{
     display: flex;
@@ -658,6 +664,9 @@ p{
     }
     .action-name, .status-name{
         margin-left: 1em;
+    }
+    .game-name .player-item__score {
+        font-size: 1.5em;
     }
 }
 @media screen and (max-width:376px){
