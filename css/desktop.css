@@ -17,8 +17,7 @@ body{
 .container{
     max-width: 1920px;
     margin: 0 auto;
-    height: 1080px;
-    max-height: 100vh;
+
 }
 .img-wrapper{
     background: url('../img/bg-1.webp') no-repeat center / cover;
@@ -114,11 +113,11 @@ h4{
     padding: 0 3vw;
     display: flex;
     justify-content: space-between;
-    height: 1080px;
-    gap: 20px;
 }
 .messages-wrapper{
     flex-shrink: 0;
+    margin-right: 1em;
+    width: 33%; 
 }
 .stopwatch{
     font-family: "Roboto Condensed", sans-serif;
@@ -144,13 +143,22 @@ h4{
     margin-top: 0;
 }
 .map-wrapper{
+    width: 100%;
     position: relative;
-    width: 1080px;
+    height: 100vh;
+    max-height: 1080px;
+    max-width: 1080px;
 }
 .map-bg, .map-image{
     position: absolute;
     z-index: -1;
     height: 100%;
+    width: 100%;
+}
+.map-bg img, .map-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .z-2{
     z-index: 2;
@@ -170,7 +178,8 @@ h4{
     /* Optional styling for the entire grid container */
     margin: 0 auto; /* Center horizontally */
     list-style-type: none;
-    grid-gap: 24px;
+    grid-gap: 1vw;
+    height: 100%;
     
 
 }
@@ -182,6 +191,19 @@ h4{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 99px;
-    height: 61px;
+    width: auto;
+    height: auto;
+}
+
+@media screen and (max-width:1280px) {
+    .messages-wrapper{
+        width: 20%;
+        font-size: 0.7em;
+        margin-top: 33px;
+    }
+    .messages{
+        height: 70vh;
+        overflow: scroll;
+        margin-top: 30px;
+    }
 }
