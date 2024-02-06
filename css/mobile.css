@@ -224,7 +224,7 @@ p{
 
 .player-item{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     font-size: 2.12em;
     font-weight: 400;
     margin-bottom: .8em;
@@ -232,12 +232,17 @@ p{
 .player-item:first-child .player-item__nickname, .player-item:first-child .player-item__game{
     font-weight: 600;
 }
+.player-item__game{
+    margin-left: auto;
+    display: flex;
+    align-items: center 
+}
 .player-item:last-child{
     margin-bottom: 0;
 }
 .player-item__score{
     margin-left: auto;
-    margin-right: 2.14em;
+    margin-right: 1.14em;
     color: #fff;
     border-radius:60px;
     width: 1.4em;
